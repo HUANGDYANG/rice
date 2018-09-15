@@ -1,0 +1,431 @@
+header, section, .descPanel {
+    width: 1210px;
+    margin: 0 auto;
+    /*background-color: purple;*/
+    /*overflow: hidden;*/
+}
+
+nav {
+    margin: 20px 0 45px 0;
+    width: 100%;
+    background-color: #3b3a41;
+}
+
+main {
+    float: left;
+    width: 950px;
+    /*background-color: deeppink;*/
+}
+
+aside {
+    float: right;
+    width: 230px;
+    /*background-color: silver;*/
+}
+
+.wall::after {
+    /*设置添加的子元素的内容为空*/
+    content: "";
+    /*设置添加的子元素为块级元素*/
+    display: block;
+    /*设置添加的子元素的高度为0*/
+    height: 0;
+    /*设置添加的子元素看不见*/
+    visibility: hidden;
+    /*给添加的子元素设置clear: both;*/
+    clear: both;
+}
+
+.logo {
+    display: inline-block;
+    width: 192px;
+    height: 33px;
+    background: url(../images/logo_dd5861f.png) 0 0 no-repeat;
+    margin: 20px 20px 0 0;
+    vertical-align: bottom;
+    /*font-size: 14px;*/
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    background: url(../images/arrow_2defc2a.png) 4px 12px no-repeat;
+    background-size: 12px auto;
+    /*background-position: -10px -10px;*/
+    display: inline-block;
+}
+
+header .left {
+    float: left;
+    font-size: 13px;
+}
+
+header .right {
+    float: right;
+    width: 390px;
+    height: 40px;
+    position: relative;
+    padding: 5px;
+}
+
+header input {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 390px;
+    height: 37px;
+    padding: 5px 0 5px 20px;
+    /*overflow: hidden;*/
+    /*z-index: 1;*/
+    font-size: 14px;
+}
+
+header .search_button {
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 25px;
+    height: 27px;
+    background: #fff url(../images/icon_5857d34.png) 0 -23px no-repeat;
+    /*background-position: 0 -23px;*/
+}
+
+.city {
+    position: relative;
+}
+
+.citys {
+    width: 205px;
+    height: 150px;
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    top: 16px;
+    left: 1px;
+    background-color: white;
+    padding: 10px 3px 10px 21px;
+}
+
+.city:hover .citys {
+    display: block;
+}
+
+.citys dd {
+    float: left;
+    margin: 10px 20px 0 0;
+    font-size: 12px;
+}
+
+.moreCitys {
+    margin: 15px 0 0 100px;
+}
+
+nav .nav {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+nav span:nth-child(n+1) {
+    width: 100px;
+    height: 65px;
+    display: inline-block;
+    text-align: center;
+    line-height: 65px;
+    color: white;
+    font-size: 20px;
+    margin-left: -3px;
+}
+
+nav span:hover {
+    background-color: black;
+}
+
+nav .login {
+    display: inline-block;
+    height: 65px;
+    margin: 0 0 -3px 673px;
+    /*line-height: 65px;*/
+    /*margin-left: 600px;*/
+}
+
+nav a {
+    color: white;
+
+}
+
+nav .login span {
+    font-size: 14px;
+    /*height: 0px;*/
+    /*width: 100px;*/
+    display: inline;
+    margin-left: 5px;
+    color: #ccc;
+}
+
+nav span.icon_down {
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../images/icon_5857d34.png) 0 1px no-repeat;
+    background-size: 20px auto;
+    width: 20px;
+    height: 22px;
+    margin-right: -9px;
+}
+
+.active_span {
+    background-color: black;
+}
+
+.ranking .title::after {
+    /*border-bottom: 1px solid #ccc;*/
+    content: '';
+    display: block;
+    /*visibility: hidden;*/
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0 20px 0;
+}
+
+.ranking .title, main > .title {
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.ranking {
+    height: 500px;
+}
+
+.ranking img {
+    width: 70px;
+    height: 90px;
+    display: none;
+}
+
+.ranking .name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.ranking .sort {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.ranking .item {
+    padding-bottom: 15px;
+}
+
+.descPanel {
+    background: url(../images/ac4bd11373f08202d963c4fe47fbfbedaa641b79.jpg) center top no-repeat;
+    background-size: 100% auto;
+    overflow: hidden;
+    color: white;
+    font-size: 14px;
+
+}
+
+.descPanel .info {
+    float: left;
+    margin: 0 5px 5px 20px;
+    overflow: hidden;
+}
+
+.descPanel .title {
+    font-size: 20px;
+    /*margin-bottom: 10px;*/
+    margin: 10px 0 10px 0;
+}
+
+.descPanel .icon_star {
+    color: #fd9590;
+}
+
+.descPanel .score {
+    color: #fd9590;
+    margin-left: 10px;
+}
+
+.descPanel .dirInfo, .time {
+    margin: 10px 0 10px 0;
+}
+
+.introduce {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 870px;
+    display: inline-block;
+}
+
+.descPanel .arrow {
+    width: 30px;
+    height: 30px;
+    background: transparent url(../images/arrow_2defc2a.png) 7px 19px no-repeat;
+    cursor: pointer;
+}
+
+.want a {
+    display: inline-block;
+    color: white;
+    width: 165px;
+    height: 30px;
+    border: 1px solid #fff;
+    background: transparent;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.descPanel img {
+    width: 183px;
+    height: 252px;
+    float: left;
+}
+
+.descPanel .mask {
+    padding: 20px 80px 20px 20px;
+
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.maskPanel {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    font-size: 13px;
+}
+
+.maskPanel .content {
+    width: 540px;
+    height: 510px;
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+.maskPanel p {
+    margin-top: 15px;
+}
+
+.maskPanel .buy a {
+    width: 160px;
+    height: 40px;
+    padding: 8px 20px 0px 20px;
+    background-color: deeppink;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+.WPanel {
+    border: 1px solid #fff;
+    height: 110px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px 0 40px 0;
+    font-size: 14px;
+}
+
+.WPanel a {
+    color: #666;
+}
+
+.date span {
+    display: inline-block;
+    margin: 10px 0 0 20px;
+}
+
+.area span {
+    display: inline-block;
+    margin: 30px 0 0 20px;
+}
+
+.WPanel .active_span a {
+    background-color: deeppink;
+    color: white;
+}
+
+.cenimaPanel {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    margin-top: 30px;
+}
+
+.cenimaPanel .bottom {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cenimaPanel .title {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.cenimaPanel .addr {
+    font-size: 12px;
+}
+
+.cenimaPanel .price {
+    color: greenyellow;
+    font-size: 16px;
+}
+
+.cenimaPanel .pick {
+    padding: 2px;
+    background-color: greenyellow;
+}
+
+.moreCinema {
+    display: inline-block;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+}
+
+.rankingData > span {
+    display: inline-block;
+    width: 310px;
+    height: 100px;
+    margin: 30px 0 30px 0;
+    text-align: center;
+}
+
+.rankingData .one, .tow {
+    border-right: 1px solid #ccc;
+}
+
+.rankingData .num {
+    font-size: 40px;
+    color: deeppink;
+}
+
+.rankingData .desc {
+    font-size: 16px;
+    /*color: #ccc;*/
+    margin-top: 20px;
+}
+
+.cenimaPanel:nth-last-child(4) {
+    border-bottom: none;
+    /*background-color: red;*/
+}

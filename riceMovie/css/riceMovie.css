@@ -1,0 +1,337 @@
+header,section{
+    width: 1210px;
+    margin: 0 auto;
+    /*background-color: purple;*/
+    /*overflow: hidden;*/
+}
+
+nav {
+    margin: 20px 0 45px 0;
+    width: 100%;
+    background-color: #3b3a41;
+}
+main {
+    float: left;
+    width: 950px;
+    /*background-color: deeppink;*/
+}
+aside {
+    float: right;
+    width: 230px;
+    /*background-color: silver;*/
+}
+
+.wall::after{
+    /*设置添加的子元素的内容为空*/
+    content: "";
+    /*设置添加的子元素为块级元素*/
+    display: block;
+    /*设置添加的子元素的高度为0*/
+    height: 0;
+    /*设置添加的子元素看不见*/
+    visibility: hidden;
+    /*给添加的子元素设置clear: both;*/
+    clear: both;
+}
+
+.logo {
+    display: inline-block;
+    width: 192px;
+    height: 33px;
+    background:  url(../images/logo_dd5861f.png) 0 0 no-repeat;
+    margin: 20px 20px 0 0;
+    vertical-align: bottom;
+    /*font-size: 14px;*/
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    background:  url(../images/arrow_2defc2a.png) 4px 12px no-repeat;
+    background-size:12px auto ;
+    /*background-position: -10px -10px;*/
+    display: inline-block;
+}
+header .left {
+    float: left;
+    font-size: 13px;
+}
+header .right {
+    float: right;
+    width: 390px;
+    height: 40px;
+    position: relative;
+    padding: 5px;
+}
+header input {
+    position: absolute;
+    top: 13px;
+    left: 6px;
+    width: 390px;
+    height: 37px;
+    padding: 5px 0 5px 20px;
+    /*overflow: hidden;*/
+    /*z-index: 1;*/
+    font-size: 14px;
+}
+header .search_button {
+    position: absolute;
+    right: 13px;
+    top: 18px;
+    width: 25px;
+    height: 27px;
+    background: #fff url(../images/icon_5857d34.png) 0 -23px no-repeat;
+    /*background-position: 0 -23px;*/
+}
+.city {
+    position: relative;
+}
+.citys {
+    width: 205px;
+    height: 150px;
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    top: 16px;
+    left:1px;
+    background-color: white;
+    padding: 10px 3px 10px 21px;
+}
+.city:hover .citys {
+    display: block;
+}
+.citys dd {
+    float: left;
+    margin: 10px 20px 0 0;
+    font-size: 12px;
+}
+.moreCitys {
+    margin: 15px 0 0 100px;
+}
+
+nav .nav {
+    width: 1210px;
+    margin: 0 auto;
+}
+nav span:nth-child(n+1) {
+    width: 100px;
+    height: 65px;
+    display: inline-block;
+    text-align: center;
+    line-height: 65px;
+    color: white;
+    font-size: 20px;
+    margin-left: -3px;
+}
+nav span:hover {
+    background-color: black;
+}
+nav .login {
+    display: inline-block;
+    height: 65px;
+    margin: 0 0 -3px 673px;
+    /*line-height: 65px;*/
+    /*margin-left: 600px;*/
+}
+nav a {
+    color: white;
+
+}
+nav .login span{
+    font-size: 14px;
+    /*height: 0px;*/
+    /*width: 100px;*/
+    display: inline;
+    margin-left: 5px;
+    color: #ccc;
+}
+nav span.icon_down {
+    vertical-align: middle;
+    display: inline-block;
+    background: url(../images/icon_5857d34.png) 0 1px no-repeat;
+    background-size: 20px auto;
+    width: 20px;
+    height: 22px;
+    margin-right: -9px;
+}
+.active_span {
+    background-color: black;
+}
+main .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+main .title {
+    font-size: 18px;
+    color: black;
+}
+main .pages {
+    font-size: 13px;
+}
+.moviePanel {
+    width: 158px;
+    height: 295px;
+    padding: 5px;
+    border: 1px solid transparent;
+    float: left;
+}
+main .bottom {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left:0;
+    height: 295px;
+}
+main .bottom:hover .left{
+    /*display: block;*/
+    left:20px;
+    opacity: 0.8;
+}
+main .bottom:hover .right {
+    /*display: block;*/
+    right:20px;
+    opacity: 0.8;
+}
+main .wrapper {
+    overflow: hidden;
+    width: 9990px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.moviePanel img {
+    width: 145px;
+    height: 205px;
+}
+.moviePanel:hover {
+    border: 1px solid hotpink;
+}
+.moviePanel .score {
+    color: #b0ff14;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+.moviePanel .name {
+    margin: 8px 0 10px 0;
+    font-size: 16px;
+}
+.moviePanel .select {
+    color: hotpink;
+    padding: 3px 5px 3px 5px;
+    border: 1px solid hotpink;
+    font-size: 14px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+main .left {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 27%;
+    /*margin-top: -55px;*/
+    z-index: 2;
+    font-size: 40px;
+    color: white;
+    /*background-color: rgba(0 0 0 0.8);*/
+    background-color: black;
+    line-height: 36px;
+    opacity: 0;
+    transition: all 1s;
+}
+main .right {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 27%;
+    /*margin-top: -55px;*/
+    z-index: 2;
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    line-height: 36px;
+    opacity: 0;
+    transition: all 1s;
+    padding-left: 5px;
+}
+.hotCinema .top::after,.ranking .title::after {
+    /*border-bottom: 1px solid #ccc;*/
+    content: '';
+    display: block;
+    /*visibility: hidden;*/
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0 20px 0;
+}
+.hotCinema .title {
+    font-size: 18px;
+    color: black;
+}
+.hotCinema .moreCinema {
+    font-size: 13px;
+    margin-left: 103px;
+}
+.hotCinema .name {
+    color: black;
+    font-size: 14px;
+}
+.hotCinema .icon_sit {
+    /*padding: 2px;*/
+    background-color: blueviolet;
+    border-radius: 3px;
+    color: white;
+}
+.hotCinema .addr {
+    font-size: 12px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 10px 0 10px 0;
+}
+.hotCinema .price {
+    color: deeppink;
+    font-size: 14px;
+}
+.hotCinema .item {
+    margin-top: 10px;
+}
+.ranking .title {
+    margin-top: 20px;
+    color: black;
+
+}
+.ranking {
+    height: 500px;
+}
+.ranking img {
+    width: 70px;
+    height: 90px;
+    display: none;
+}
+/*.ranking .first_img {*/
+    /*display: block;*/
+/*}*/
+.ranking .name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.ranking .sort {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.ranking .item {
+    padding-bottom: 15px;
+}
+
+/*.ranking:hover img {*/
+    /*display: none;*/
+    /*!*width: 500px;*!*/
+/*}*/
+/*.ranking .item:hover img {*/
+    /*display: inline-block;*/
+/*}*/

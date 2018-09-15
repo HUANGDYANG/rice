@@ -1,0 +1,45 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;padding:0;box-sizing: border-box;
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0;
+}fieldset,img{
+     border:0;
+ }
+/*2.清空默认样式*/
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+    color: #B08C4A;
+}
+ul, ol{
+    list-style: none;
+}
+ul ,li {
+    list-style: none;
+}
+/*3.利用body设置整个界面的文字信息
+文字大小 文字字体 文字颜色
+*/
+body{
+    /*font-size:14px;*/
+    font-family:"微软雅黑";
+    color: #666;
+}
+/*墙*/
+.wall::after{
+    /*设置添加的子元素的内容为空*/
+    content: "";
+    /*设置添加的子元素为块级元素*/
+    display: block;
+    /*设置添加的子元素的高度为0*/
+    height: 0;
+    /*设置添加的子元素看不见*/
+    visibility: hidden;
+    /*给添加的子元素设置clear: both;*/
+    clear: both;
+}

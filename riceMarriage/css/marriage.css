@@ -1,0 +1,544 @@
+header,nav,section{
+    width: 1210px;
+    margin: 0 auto 20px auto;
+    /*overflow: hidden;*/
+}
+main {
+    width: 950px;
+    /*height: 1000px;*/
+    float: left;
+    overflow: hidden;
+    /*background-color: silver;*/
+}
+aside {
+    width: 230px;
+    /*height: 1000px;*/
+    float: right;
+    /*overflow: hidden;*/
+    /*background-color: red;*/
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+}
+.header_menu {
+    width: 100%;
+    height: 36px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #fafafa;
+    color: #8c8c8c;
+    border-bottom: 1px solid #faa7cc;
+}
+.header_menu_left {
+    float: left;
+}
+.header_menu_right {
+    float: right;
+}
+.header_menu_right li {
+    float: left;
+    margin-left: 10px;
+}
+.header_bottom {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.header_bottom .logo img{
+    float: left;
+    width: 154px;
+    height: 42px;
+}
+.header_bottom_right {
+    float: right;
+}
+.header_bottom_right .search{
+    width: 485px;
+    height: 40px;
+    float: left;
+}
+.header_bottom_right .search>input  {
+    width: 430px;
+    height: 40px;
+    display: inline-block;
+    float: left;
+    padding: 4px 4px 4px 10px;
+    border: 1px solid #dfdfdf;
+
+}
+.header_bottom_right .search_button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    /*display: inline-block;*/
+    float: left;
+}
+.header_bottom_right .search_button input {
+    /*visibility: hidden;*/
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #dfdfdf;
+    border-left: none;
+
+}
+.header_bottom_right .search_button:hover {
+    background-color: #ff4883;
+    color: white;
+}
+.header_bottom_right .search_button span {
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    height: 40px;
+}
+
+nav ul {
+    background-color: #313137;
+    color: white;
+    font :18px/44px 'Microsoft YaHei';
+    /*overflow: hidden;*/
+}
+nav>ul>li {
+    width: 106px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    float: left;
+}
+nav>ul>li:hover {
+    background-color: black;
+}
+nav>ul>li:nth-child(1) {
+    height: 44px;
+    width: 226px;
+    background-color:#ff4883 ;
+    text-align: left;
+    position: relative;
+    padding-left: 10px;
+}
+nav>ul>li:nth-child(1):hover .sort_panel {
+    display: block;
+}
+nav>ul>li:nth-child(1):hover .bg_arrow {
+    transform: rotateZ(180deg);
+}
+nav li:nth-child(1)>a:hover {
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    color: white;
+}
+nav>ul>li>a:hover {
+    color: white;
+}
+.bg_arrow {
+    display: inline-block;
+    background: url('../images/arrow-down-white_656c549.png') no-repeat;
+    width: 13px;
+    height: 7px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition: all 1s;
+    transform: rotateX(0deg);
+}
+.sort_panel {
+    width: 226px;
+    height: 480px;
+    position: absolute;
+    top: 44px;
+    left: 0;
+    background-color: deeppink;
+    display: none;
+    z-index: 2;
+}
+
+.sort_panel>ul {
+    background-color: #f9f9f9;
+    navposition: relative;
+}
+.sort_panel>ul>li {
+    width: 226px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #faa7cc;
+    padding:0 10px 0 10px;
+    color:#949494
+}
+.sort_panel li>.panel_detail {
+    background-color: white;
+    width: 450px;
+    height: 420px;
+    position: absolute;
+    left: 226px;
+    top: 0px;
+    /*display: none;*/
+    padding: 20px;
+    box-shadow: 1px 1px  #00B3BE;
+    border: 1px solid #faa7cc;
+    display: none;
+}
+.sort_panel li:hover {
+    background-color: #ddd;
+}
+.sort_panel li:hover .panel_detail {
+    display: block;
+}
+.sort_panel li>a {
+    color: #000;
+}
+.sort_panel>ul a {
+    font-size: 12px;
+    color: #ccc;
+    text-decoration: none;
+}
+.sort_panel li>a:nth-child(1) {
+    margin-right: 60px;
+    font :18px/44px 'Microsoft YaHei';
+    color: black;
+}
+
+.sort_panel>ul a:nth-child(n+2):hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
+.wall::after{
+    /*设置添加的子元素的内容为空*/
+    content: "";
+    /*设置添加的子元素为块级元素*/
+    display: block;
+    /*设置添加的子元素的高度为0*/
+    height: 0;
+    /*设置添加的子元素看不见*/
+    visibility: hidden;
+    /*给添加的子元素设置clear: both;*/
+    clear: both;
+}
+.panel_detail dl:nth-child(1)::after {
+    display: block;
+    content: "";
+    height: 0;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    border-bottom: 1px solid #faa7cc;
+}
+.panel_detail dt {
+    font-size: 14px;
+    color: #000;
+    line-height: 30px;
+}
+.panel_detail dd {
+    line-height: 20px;
+}
+.panel_detail a:hover {
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+section>.nav {
+    width: 100%;
+    border-bottom: 1px solid #faa7cc;
+    overflow: hidden;
+    
+}
+section>.nav>li {
+    float: left;
+    width: 106px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+}
+.nav_a a{
+    color: #000;
+    border-right: 1px solid #999;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: inline-block;
+}
+.active_li {
+    border-bottom: 3px solid #ff4683;
+    width: 106px;
+    position: relative;
+}
+.nav_a .active_li a {
+    color: deeppink;
+}
+.active_li::after {
+    width: 0;
+    height: 0;
+    border-left: 4px dashed transparent;
+    border-right: 4px dashed transparent;
+    border-bottom: 4px solid #ff4683;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    cursor: default;
+    /*z-index: -1;*/
+}
+/*.nav_a a:nth-child(4) {*/
+    /*border-right: none;*/
+    /*background-color: red;*/
+/*}*/
+.nav_a .last_a {
+    border-right: none;
+}
+.nav_a a:hover {
+    color:  deeppink;
+    text-decoration: none;
+}
+.nav_bar {
+    font-size: 12px;
+    color:deeppink;
+    margin: 20px;
+}
+.area {
+    width: 100%;
+    height: 140px;
+    border: 1px solid #faa7cc;
+    padding: 18px 100px 18px 20px;
+    margin-bottom: 30px;
+}
+.area span {
+    font-size: 13px;
+    color: #ccc;
+}
+.area_left {
+    overflow: hidden;
+    display: inline-block;
+    width: 950px;
+    vertical-align: top;
+    padding-top: 4px;
+}
+
+.area_left span {
+    float: left;
+    width: 100px;
+    margin:0 15px 5px 15px;
+}
+.area_top {
+    margin-bottom: 20px;
+}
+.active_a {
+    background-color: deeppink;
+    color: white;
+    padding: 4px;
+    display: inline-block;
+}
+.ranking {
+    width: 100%;
+    /*height: 45px;*/
+    overflow: hidden;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    z-index: 2;
+}
+
+.ranking li {
+    float: left;
+    width: 68px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 15px;
+}
+.ranking li:last-child {
+    float: right;
+}
+h6 p{
+    text-align: right;
+    color: #ccc;
+    /*line-height: 20px;*/
+    margin-top: 10px;
+}
+.sellerPanel {
+    width: 100%;
+    height: 425px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.ad {
+    background-color: #fcf8f2;
+}
+.sellerPanel:hover {
+    background-color: #f7f7f7;
+}
+.sellerPanel .top,.center {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sellerPanel .bottom img {
+    width: 280px;
+    height: 165px;
+}
+.sellerPanel .choice {
+    padding: 5px;
+    color: white;
+    background-color: #fcb200;
+}
+.sellerPanel .title {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    vertical-align: middle;
+}
+.sellerPanel .icon {
+    padding: 3px;
+    background-color: deeppink;
+    color: white;
+}
+.avr_price {
+    color: deeppink;
+}
+.sellerPanel .addr {
+    color: #666;
+    font-size: 14px;
+}
+.sellerPanel .comment,.level {
+    color: #666;
+}
+.sellerPanel .product {
+    position: relative;
+}
+.sellerPanel .hot {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    padding: 3px;
+    background-color: deeppink;
+    color: white;
+}
+.product_name {
+    color: black;
+    font-size: 18px;
+    margin: 10px;
+
+}
+.discount {
+    color: deeppink;
+    font-size: 26px;
+    margin: 10px;
+}
+.original {
+    color: deeppink;
+    font-size: 12px;
+    text-decoration: line-through;
+    margin: 10px;
+}
+.sellerPanel .product {
+    background-color: white;
+    border: 1px solid transparent;
+}
+.sellerPanel .product:hover {
+    border: 1px solid #ccc;
+}
+.sellerPanel .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.sellerPanel .bottom a {
+    text-decoration: none;
+}
+h5 span {
+    font-size: 16px;
+    color: #666;
+    /*margin-bottom: 5px;*/
+}
+.icon_star {
+    color: #fcb400;
+}
+
+.likePanel {
+    width: 100%;
+    /*height: 155px;*/
+    margin-top: 10px;
+    padding-bottom: 5px;
+    /*border-bottom: 1px solid #ccc;*/
+    border-bottom: 1px solid #ccc;
+}
+.likePanel img {
+    width: 100%;
+}
+.like_discount {
+    font-size: 15px;
+    color: deeppink;
+}
+.like_product_name {
+    font-size: 12px;
+    color: #555;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 5px 0 5px 0;
+}
+.pagenation {
+    overflow: hidden;
+    margin: 20px auto 20px auto;
+    width: 300px;
+}
+.pagenation li {
+    float: left;
+    width: 22px;
+    height: 22px;
+    padding: 2px;
+    text-align: center;
+    /*line-height: 20px;*/
+    color: black;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.pagenation li:last-child {
+    width: 60px;
+}
+#active_page {
+    border: 1px solid #000;
+}
+
+footer {
+    width: 100%;
+    background-color: #fafafa;
+    padding: 50px 180px 50px 180px;
+    /*height: 255px;*/
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+footer ul {
+    overflow: hidden;
+    width: 1400px;
+}
+footer li {
+    width: 244px;
+    height: 147px;
+    border-right: 1px solid #ccc;
+    float: left;
+    /*text-align: center;*/
+}
+footer .link {
+    font-size: 14px;
+    margin-top: 15px;
+}
+footer p {
+    margin-top: 5px;
+}
+footer img {
+    vertical-align: middle;
+}
+footer .back {
+    width: 276px;
+    margin: 20px auto;
+}

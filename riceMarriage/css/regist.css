@@ -1,0 +1,156 @@
+header {
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    vertical-align: bottom;
+    /*margin-top: 20px;*/
+}
+header a {
+    margin-right: 520px;
+
+}
+header a:hover {
+    color: #666;
+}
+.head_title {
+    font-size: 20px;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+    display: inline-block;
+}
+header .login {
+    font-weight: 700;
+    color: #666;
+    height: 32px;
+    width: 64px;
+    border: 0;
+    background: url(../images/reg_icons.png) no-repeat 0 -48px;
+    display: inline-block;
+}
+header .desc {
+    font-size: 12px;
+}
+section {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 40px;
+
+}
+main {
+    float: left;
+}
+aside {
+    float: right;
+}
+main p {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+main p input {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 3px;
+}
+.ident>input{
+    width: 170px;
+}
+.ident>button {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    height: 40px;
+    background: #f7f7f7;
+    color: #666;
+    font-weight: 400;
+    width: 160px;
+    margin-left: 10px;
+}
+.protocol {
+    font-size: 12px;
+    margin-left: 32px;
+    margin-top: 20px;
+}
+.protocol>input {
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+main input:focus {
+    border: 1px solid deeppink;
+    outline: none;
+}
+.protocol .desc>a {
+    color: blueviolet;
+}
+.protocol .desc>a:hover {
+    text-decoration: underline;
+}
+
+.mgl_two {
+    margin-left: 13px;
+}
+.regist {
+    height: 50px;
+    padding: 10px 150px 10px 150px;
+    background-color: #fa6790;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    margin:10px 0 0 42px;
+    border: none;
+    cursor: pointer;
+}
+aside {
+    width: 258px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f5fbff;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+h3 {
+    background:url(../images/phone.png) left center no-repeat;
+    font-size: 13px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    border-bottom: 1px solid #ccc;
+}
+aside p {
+    margin-top: 7px;
+    font-size: 12px;
+}
+.way {
+    margin-top: 20px;
+}
+.format {
+    color: orangered;
+    font-size: 13px;
+}
+aside>div {
+    width: 168px;
+    margin: 20px auto;
+
+}
+aside>div>img {
+    width: 168px;
+    height: 168px;
+}
+aside .scan {
+    text-align: center;
+    color: black;
+}
+footer {
+    color: blueviolet;
+    font-size: 12px;
+    text-align: center;
+    width: 980px;
+    margin: 50px auto;
+    overflow: hidden;
+}

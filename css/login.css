@@ -1,0 +1,301 @@
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.pink{
+    color: #F69;
+}
+.mt20{
+    margin-top: 20px;
+}
+/*头部*/
+header{
+    height: 78px;
+    border-bottom: 1px solid #DBDBDB;
+}
+.header__page, .main__page, .footer__page{
+    width: 962px;
+    margin: 0 auto;
+}
+.header__page__l{
+    display: inline-block;
+    padding-top: 25px;
+    color: #666;
+}
+.header__logo{
+    display: inline-block;
+    width: 96px;
+    height: 37px;
+    background: url(../image/user_z_fe074f3.png) no-repeat -286px -23px;
+}
+.header__pipe{
+    display: inline-block;
+    width: 1px;
+    height: 25px;
+    margin-left: 17px;
+    border-left: 2px solid #ededed;
+}
+.header__page__l__span{
+    font-size: 18px;
+    vertical-align: 5px;
+}
+
+.header__page__r{
+    line-height: 78px;
+    color: #666;
+}
+.header__page__r__span{
+    font-size: 12px;
+}
+.header__btn{
+    padding: 7px 20px;
+    font-weight: 700;
+    color: #666;
+    border: 1px solid #DDD;
+    border-radius: 3px;
+    outline:none;
+    background-color: #fff;
+    cursor: pointer;
+}
+/*主体*/
+.main{
+    width: 100%;
+    padding: 52px 0;
+    background-color: #f5fbfd;
+    overflow: hidden;
+}
+.main__page__l{
+    width: 623px;
+    height: 337px;
+    background: url(../image/login-logo_30a0915.png) no-repeat;
+}
+/*常规登录盒子*/
+.main__page__r{
+    width: 309px;
+    min-height: 247px;
+    padding: 15px;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.main__page__r>div, .main__page__phone-login-box>div{
+    position: relative;
+    margin: 10px 0 15px 0;
+}
+.main__h2{
+    height: 50px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.main__Short-message-login{
+    display: inline-block;
+    padding-left: 15px;
+    margin-left: 192px;
+    color: #666;
+    background: url(../image/smsSwitchPhone.png) no-repeat 0 0;
+}
+.main__Short-message-login:hover{
+    color: #2e7fdb;
+    text-decoration: underline;
+}
+.main__account-input{
+    width: 280px;
+    height: 40px;
+    text-indent: 30px;
+    color: #999;
+    border: 1px solid #F0F0F0;
+    background-color: #fff !important;
+    outline: none;
+    transition: color,border .2s;
+}
+.main__account-input:focus, .main__password-input:focus{
+    color: #F69;
+    border: 1px solid  #F69;
+}
+.main__account-logo{
+    position: absolute;
+    left: 12px; top: 12px;
+    width: 18px;
+    height: 18px;
+    transition: color .2s;
+}
+.main__password-input{
+    width: 280px;
+    height: 40px;
+    text-indent: 30px;
+    color: #999;
+    border: 1px solid #F0F0F0;
+    background-color: #fff !important;
+    outline: none;
+    transition: color,border .2s;
+}
+input::-webkit-input-placeholder{
+    color: #DBDBDB;
+}
+.main__password-logo{
+    position: absolute;
+    left: 10px; top: 12px;
+    width: 18px;
+    height: 18px;
+    transition: color .2s;
+}
+.main__checkbox{
+    vertical-align: middle;
+}
+.main__auto-label{
+    padding-right: 122px;
+}
+.main__problem{
+    color: #73ADC9;
+}
+.main__problem:hover{
+    text-decoration: underline;
+}
+.main__btn{
+    padding: 10px 125px;
+    margin: 40px 0 20px 0;
+    font-weight: 700;
+    color: white;
+    background-color: #F69;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+.main__btn:hover{
+    background-color: #FF78A5;
+    cursor: pointer;
+}
+.mt0{
+    margin-top: 0;
+}
+.main__qq{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    background: url(../image/pass_login_icons.png) no-repeat -88px 0;
+}
+.main__weibo{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../image/pass_login_icons.png) no-repeat -64px 0;
+}
+/*短信登录盒子*/
+.main__page__phone-login-box{
+    display: none;
+    width: 309px;
+    min-height: 247px;
+    padding: 15px;
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.main__phone-tip{
+    display: none;
+    position: absolute;
+    margin-top: -14px;
+    color: #F69;
+}
+.main__phone-input{
+    width: 280px;
+    height: 40px;
+    text-indent: 30px;
+    color: #999;
+    border: 1px solid #F0F0F0;
+    background-color: #fff !important;
+    outline: none;
+    transition: color,border .2s;
+}
+.main__phone-input-logo{
+    position: absolute;
+    left: 10px; top: 12px;
+    width: 18px;
+    height: 18px;
+    transition: color .2s;
+}
+.main__dynamic-input{
+    width: 158px;
+    height: 40px;
+    text-indent: 15px;
+    color: #999;
+    border: 1px solid #F0F0F0;
+    background-color: #fff !important;
+    outline: none;
+    transition: color,border .2s;
+}
+.main__phone-input:focus, .main__dynamic-input:focus{
+    color: #F69;
+    border: 1px solid  #F69;
+}
+.main__send-btn{
+    width: 108px;
+    height: 42px;
+    margin-left: 7px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    outline: none;
+}
+.main__send-btn:hover{
+    background-color: #eee;
+}
+.main__accept{
+    color: #969696;
+}
+.main__protocol{
+    padding-right: 50px;
+    color: #1b66c7;
+}
+.main__protocol:hover, .main__account-a:hover{
+    text-decoration: underline;
+}
+.main__account-a{
+    color: #1b66c7;
+}
+.main__common-login{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+    background: url(../image/pass_login_icons.png) no-repeat -217px -64px;
+}
+.main__clear{
+    display: none;
+    position: absolute;
+    left: 263px; top: 13px;
+    opacity: .4;
+}
+.main__clear_dynamic{
+    left: 142px; top: 13px;
+}
+/*底部*/
+footer{
+    border-top: 5px solid #DBDBDB;
+}
+.footer__page{
+    padding: 40px 0 20px;
+    font-size: 12px;
+    color: #999;
+}
+.footer__list{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.footer__p{
+    text-align: center;
+}
+footer a{
+    display: inline-block;
+    margin: 0 15px;
+    color: #666;
+}
+footer a:hover{
+    text-decoration: underline;
+}
